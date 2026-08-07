@@ -31,7 +31,8 @@ pipeline {
         stage('Debug Credentials') {
             steps {
                 bat "echo Username is: %DOCKERHUB_CREDENTIALS_USR%"
-                bat "powershell -Command \"Write-Host 'Password length is:' $env:DOCKERHUB_CREDENTIALS_PSW.Length\""
+                bat "echo First 4 chars of token: %DOCKERHUB_CREDENTIALS_PSW:~0,4%"
+                bat "echo Last 4 chars of token: %DOCKERHUB_CREDENTIALS_PSW:~-4%"
             }
         }
 
