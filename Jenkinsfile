@@ -28,6 +28,13 @@ pipeline {
             }
         }
 
+        stage('Debug Credentials') {
+            steps {
+                bat "echo Username is: %DOCKERHUB_CREDENTIALS_USR%"
+                bat "powershell -Command \"Write-Host 'Password length is:' $env:DOCKERHUB_CREDENTIALS_PSW.Length\""
+            }
+        }
+
         stage('Push to Docker Hub') {
             steps {
                 bat "echo %DOCKERHUB_CREDENTIALS_PSW% | docker login -u %DOCKERHUB_CREDENTIALS_USR% --password-stdin"
