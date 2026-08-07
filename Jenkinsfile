@@ -16,9 +16,9 @@ pipeline {
 
         stage('Install Dependencies & Test') {
             steps {
-                bat 'pip install -r requirements.txt'
-                bat 'pip install pytest'
-                bat 'python -m pytest test_app.py -v'
+                bat '"C:\\Users\\rishu\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\pip.exe" install -r requirements.txt'
+                bat '"C:\\Users\\rishu\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\pip.exe" install pytest'
+                bat '"C:\\Users\\rishu\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pytest test_app.py -v'
             }
         }
 
