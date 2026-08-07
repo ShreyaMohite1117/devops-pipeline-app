@@ -28,17 +28,9 @@ pipeline {
             }
         }
 
-        stage('Debug Credentials') {
-            steps {
-                bat "echo Username is: %DOCKERHUB_CREDENTIALS_USR%"
-                bat "echo First 4 chars of token: %DOCKERHUB_CREDENTIALS_PSW:~0,4%"
-                bat "echo Last 4 chars of token: %DOCKERHUB_CREDENTIALS_PSW:~-4%"
-            }
-        }
-
         stage('Push to Docker Hub') {
             steps {
-                bat "echo %DOCKERHUB_CREDENTIALS_PSW% | docker login -u %DOCKERHUB_CREDENTIALS_USR% --password-stdin"
+                bat "docker login -u %DOCKERHUB_CREDENTIALS_USR% -p %DOCKERHUB_CREDENTIALS_PSW%"
                 bat "docker push %IMAGE_NAME%:latest"
             }
         }
