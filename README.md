@@ -547,30 +547,6 @@ Testing is also performed automatically as part of the Jenkins CI/CD pipeline.
 
 ---
 
-# 📸 Screenshots
-
-## Application Dashboard
-
-Add your application screenshot here:
-
-```markdown
-![Application Dashboard](screenshots/dashboard.png)
-```
-
-## Jenkins Pipeline
-
-```markdown
-![Jenkins Pipeline](screenshots/jenkins-success.png)
-```
-
-## Grafana Monitoring
-
-```markdown
-![Grafana Monitoring](screenshots/grafana-metrics.png)
-```
-
----
-
 # 🧩 Key Challenges Solved
 
 ## Windows PATH Issues
