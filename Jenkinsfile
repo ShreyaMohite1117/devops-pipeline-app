@@ -34,6 +34,15 @@ pipeline {
                 bat "docker push %IMAGE_NAME%:latest"
             }
         }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                bat "kubectl apply -f deployment.yaml"
+                bat "kubectl apply -f service.yaml"
+                bat "kubectl rollout restart deployment/devops-pipeline-app"
+                bat "kubectl rollout status deployment/devops-pipeline-app"
+            }
+        }
     }
 
     post {
