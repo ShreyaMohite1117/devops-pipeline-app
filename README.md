@@ -91,6 +91,8 @@ Grafana dashboard showing monitoring metrics for the running Kubernetes workload
 
 <img width="1365" height="767" alt="grafana" src="https://github.com/user-attachments/assets/474d889e-c71d-48de-8da9-670bcdf8a729" />
 
+<img width="1365" height="680" alt="grafana_data" src="https://github.com/user-attachments/assets/9d204b93-ed0d-4eea-9327-a33a066fcdb3" />
+
 
 '''
 
