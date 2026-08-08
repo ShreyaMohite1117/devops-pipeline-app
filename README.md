@@ -29,6 +29,70 @@ Kubernetes Deployment
     ↓
 Prometheus + Grafana
 ```
+## 📸 Project Screenshots
+
+### 🖥️ Live Application Dashboard
+
+The live dashboard displays the running application's status, version, uptime, deployment information, and the Kubernetes pod serving the request.
+
+<img width="1365" height="767" alt="live_dashboard" src="https://github.com/user-attachments/assets/ba06b81f-164c-45fd-990c-edcf5e342211" />
+
+
+---
+
+### 🌐 Application Running on Localhost
+
+The Flask application running successfully on the local development environment.
+
+<img width="1365" height="767" alt="localhost_running" src="https://github.com/user-attachments/assets/13a6d378-499c-414d-bea9-0a3d9c7231d2" />
+
+
+---
+
+### 🐳 Docker Desktop
+
+Docker Desktop showing the containerized application running successfully.
+
+<img width="1365" height="715" alt="docker_desktop" src="https://github.com/user-attachments/assets/8118e510-4a3a-4fd1-aa18-0411161f751a" />
+
+---
+
+### ☸️ Kubernetes
+
+Kubernetes showing the deployed application pods and services.
+
+<img width="1365" height="610" alt="Kubernetes " src="https://github.com/user-attachments/assets/a57eb9c2-4c45-440c-9a5d-ac3f40cd509b" />
+
+
+---
+
+### ⚙️ Jenkins CI/CD Pipeline
+
+Jenkins pipeline showing the automated CI/CD stages including testing, Docker image creation, Docker Hub push, and Kubernetes deployment.
+
+<img width="1365" height="767" alt="jenkins_build" src="https://github.com/user-attachments/assets/9e8c7eb3-9be9-43b2-9678-8b21c554e526" />
+
+<img width="1365" height="767" alt="jenkins_final" src="https://github.com/user-attachments/assets/58926ee0-a318-4eed-9c26-1e07ab8ea5c2" />
+
+
+---
+
+### 🔗 GitHub Webhook with ngrok
+
+ngrok exposing the locally running Jenkins server so that GitHub can trigger the Jenkins pipeline through a webhook.
+
+<img width="1098" height="564" alt="ngrok" src="https://github.com/user-attachments/assets/eb7b7ea0-ddbc-4b07-a644-f67aa429eb68" />
+
+---
+
+### 📊 Grafana Monitoring
+
+Grafana dashboard showing monitoring metrics for the running Kubernetes workloads.
+
+<img width="1365" height="767" alt="grafana" src="https://github.com/user-attachments/assets/474d889e-c71d-48de-8da9-670bcdf8a729" />
+
+
+'''
 
 Whenever a developer pushes new code:
 
